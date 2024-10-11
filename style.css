@@ -1,0 +1,123 @@
+html {
+       background-color: rgb(245, 149, 219);
+
+}
+
+
+#cpage {
+    position: fixed;
+   background-color: rgb(245, 149, 219);
+   height: 100%;
+   width: 100%;
+   margin: 0, auto;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   min-height: 100vh;
+}
+
+.coin {
+   width: 50%;
+  z-index: 10;
+  position: fixed;
+}
+
+
+#page {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    margin: 0, auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+ }
+
+#text {
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  font-size: 200%;
+  
+ background: linear-gradient(270deg, #ff0000, #ff7e00, #ffee00, #02ff00, #001cff, #af00ff);
+    background-size: 1200% 1200%;
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    -webkit-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  
+}
+
+.hand1 {
+  position: sticky;
+  rotate: -90deg;
+  width: 15%;
+   z-index: 2;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -3%;
+    margin-top: 15%;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+.hand2 {
+  position: sticky;
+  rotate: 75deg;
+  width: 14%;
+  z-index: 2;
+  animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+ 
+.confetti {
+  width: 80%;
+  position: fixed;
+  
+}
+
+
+
+.button {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  position: sticky;
+  width: 20%;
+  height: 60%;
+  margin-top: 5%;
+  opacity: 0;
+  
+}
